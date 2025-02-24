@@ -7,13 +7,14 @@ import {
   Typography,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import image from "/lua.png";
+import image from "/foto.jpg";
 import DescriptionIcon from "@mui/icons-material/Description";
 import CakeIcon from "@mui/icons-material/Cake";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import MailIcon from "@mui/icons-material/Mail";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import CodeIcon from "@mui/icons-material/Code";
+import "./About.css";
 
 function About() {
   const ContactData = [
@@ -33,7 +34,7 @@ function About() {
       flexDirection={"column"}
       alignItems={"center"}
       paddingTop={3}
-      paddingBottom={10}
+      sx={{ paddingBottom: { xs: "5rem", sm: "2rem", md: "0rem" } }}
     >
       <Divider sx={{ width: "70%", mx: "auto" }}>
         <Typography
@@ -63,6 +64,7 @@ function About() {
         }}
       >
         <Card
+          className="card-img"
           sx={{
             maxWidth: { xs: "100%", sm: "70%", md: "50%" },
             maxHeight: "450px",
@@ -79,7 +81,7 @@ function About() {
         <Grid
           item
           sx={{
-            textAlign: { xs: "center", sm:"center" },
+            textAlign: { xs: "center", sm: "center" },
             maxWidth: { xs: "100%", md: "60%" },
           }}
         >
@@ -149,7 +151,13 @@ function About() {
             paddingTop={2}
             sx={{ justifyContent: { xs: "center", md: "left" } }}
           >
-            <Button variant="contained" fontFamily="monospace" color="primary">
+            <Button
+              variant="contained"
+              fontFamily="monospace"
+              color="primary"
+              href="/currículo Eduardoschermack.pdf"
+              download={"curriculo-Eduardo.pdf"}
+            >
               <DescriptionIcon
                 sx={{
                   marginRight: "7px",

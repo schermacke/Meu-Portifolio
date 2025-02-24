@@ -1,11 +1,11 @@
-.Developer {
-
+.Developer:hover {
+    transform: scale(1.02);
 }
 
-.Database {
-
+.Database:hover {
+    transform: scale(1.02);
 }
 
-.Framework {
-
+.Framework:hover {
+    transform: scale(1.02);
 }

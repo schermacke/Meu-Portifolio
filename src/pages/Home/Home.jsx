@@ -5,9 +5,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import About from "../About/About.jsx";
-//import Services from "../PasteServices/Services.jsx";
+import Services from "../PasteServices/Services.jsx";
 //import Contact from "../Contact/Contact.jsx";
 import Technologies from "../Technologies/Technologies.jsx";
+import "./Home.css";
 
 function Home() {
   const scrollSection = (sectionId) => {
@@ -17,6 +18,18 @@ function Home() {
     }
   };
 
+  const handleGit = () => {
+    window.open("https://github.com/schermacke", "_blank");
+  };
+
+  const handleInsta = () => {
+    window.open("https://www.instagram.com/eduardo_schermack/#", "_blank");
+  };
+
+  const handleTelegram = () => {
+    window.open("https://t.me/eduardo_schermack", "_blank");
+  };
+  
   return (
     <>
       <Box
@@ -68,15 +81,15 @@ function Home() {
             size="large"
             onClick={() => scrollSection("services")}
           >
-            Serviços
+            Projetos
           </Button>
-          <Button
+          {/*<Button
             variant="text"
             size="large"
             onClick={() => scrollSection("contato")}
           >
             Contato
-          </Button>
+          </Button>*/}
         </Grid>
         <Divider sx={{ width: "70%", mx: "auto", paddingBottom: 3 }}>
           <Grid
@@ -142,14 +155,30 @@ function Home() {
             paddingTop={3}
             sx={{ flexWrap: "wrap" }}
           >
-            <GitHubIcon fontSize="large" sx={{ cursor: "pointer" }} />
-            <InstagramIcon fontSize="large" sx={{ cursor: "pointer" }} />
-            <TelegramIcon fontSize="large" sx={{ cursor: "pointer" }} />
+            <GitHubIcon
+              onClick={handleGit}
+              className="git"
+              fontSize="large"
+              sx={{ cursor: "pointer" }}
+            />
+            <InstagramIcon
+              onClick={handleInsta}
+              className="insta"
+              fontSize="large"
+              sx={{ cursor: "pointer" }}
+            />
+            <TelegramIcon
+              onClick={handleTelegram}
+              className="tele"
+              fontSize="large"
+              sx={{ cursor: "pointer" }}
+            />
           </Grid>
         </Grid>
       </Box>
       <About />
       <Technologies />
+      <Services />
     </>
   );
 }

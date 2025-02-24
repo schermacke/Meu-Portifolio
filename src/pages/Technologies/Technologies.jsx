@@ -16,6 +16,7 @@ import { SiAxios } from "react-icons/si";
 import { IoLogoElectron } from "react-icons/io5";
 import { TbBrandCSharp } from "react-icons/tb";
 import "./Tecno.css";
+import { DiMsqlServer } from "react-icons/di";
 
 function Technologies() {
   return (
@@ -25,6 +26,7 @@ function Technologies() {
       justifyContent={"center"}
       alignItems={"center"}
       flexDirection={"column"}
+      sx={{ height: { xs: "auto", sm: "auto", md: "90vh" } }}
     >
       <Divider sx={{ width: "70%", mx: "auto" }}>
         <Typography
@@ -35,13 +37,29 @@ function Technologies() {
           Tecnologias
         </Typography>
       </Divider>
+      <Typography
+        paddingTop={7}
+        display={"flex"}
+        justifyContent={"center"}
+        textAlign={"center"}
+        sx={{
+          fontSize: { xs: "1.2rem", sm: "1.2rem", md: "1.4rem" },
+          maxWidth: { xs: "90%", sm: "70%", md: "70%" },
+        }}
+        fontFamily={"monospace"}
+      >
+        A seguir, apresento as tecnologias que domino e aplico com frequência em
+        meus projetos!
+      </Typography>
       <Grid
         paddingTop={5}
         item
-        sx={{ flexDirection: { xs: "column", sm: "column", md: "row" } }}
+        sx={{
+          flexDirection: { xs: "column", sm: "column", md: "row" },
+          alignItems: { xs: "center", sm: "center", md: "flex-start" },
+        }}
         display={"flex"}
         justifyContent={"center"}
-        alignItems={"center"}
         gap={3}
       >
         <Card
@@ -158,6 +176,7 @@ function Technologies() {
                   MongoDB
                 </Typography>
                 <Typography
+                  paddingBottom={"10px"}
                   variant="h6"
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
@@ -167,6 +186,17 @@ function Technologies() {
                     style={{ marginLeft: "5px", marginRight: "5px" }}
                   />
                   MySQL
+                </Typography>
+                <Typography
+                  variant="h6"
+                  fontFamily={"monospace"}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
+                  <DiMsqlServer
+                    fontSize={"30px"}
+                    style={{ marginLeft: "5px", marginRight: "5px" }}
+                  />
+                  MySQL Server
                 </Typography>
               </Grid>
             </Card>
