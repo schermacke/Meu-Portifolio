@@ -100,7 +100,7 @@ function Home() {
           >
             <LocalPhoneIcon sx={{ marginRight: "7px" }} />
             <Typography fontFamily={"monospace"} color="warning">
-              +55 99676 - 4737
+              +55 5599676 - 4737
             </Typography>
           </Grid>
         </Divider>
