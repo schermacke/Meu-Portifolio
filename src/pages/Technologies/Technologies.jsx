@@ -196,7 +196,7 @@ function Technologies() {
                     fontSize={"30px"}
                     style={{ marginLeft: "5px", marginRight: "5px" }}
                   />
-                  MySQL Server
+                  SQL Server
                 </Typography>
               </Grid>
             </Card>
