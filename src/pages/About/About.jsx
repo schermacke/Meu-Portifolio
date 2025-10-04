@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import image from "/foto.jpg";
+import image from "/Edu.png";
 import DescriptionIcon from "@mui/icons-material/Description";
 import CakeIcon from "@mui/icons-material/Cake";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -63,21 +63,14 @@ function About() {
           maxWidth: { xs: "90%", md: "70%" },
         }}
       >
-        <Card
-          className="card-img"
-          sx={{
-            maxWidth: { xs: "100%", sm: "70%", md: "50%" },
-            maxHeight: "450px",
-            borderRadius: "1px",
-            overflow: "hidden",
-          }}
-        >
+        <Grid sx={{ display: "flex", position: "relative", paddingRight: 5 }}>
           <img
+            className="image"
             src={image}
             alt="Eduardo Schermack"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{ maxWidth: "300px" }}
           />
-        </Card>
+        </Grid>
         <Grid
           item
           sx={{

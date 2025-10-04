@@ -9,6 +9,7 @@ import Services from "../PasteServices/Services.jsx";
 //import Contact from "../Contact/Contact.jsx";
 import Technologies from "../Technologies/Technologies.jsx";
 import "./Home.css";
+import Formations from "../Formations/Formations.jsx";
 
 function Home() {
   const scrollSection = (sectionId) => {
@@ -29,7 +30,7 @@ function Home() {
   const handleTelegram = () => {
     window.open("https://t.me/eduardo_schermack", "_blank");
   };
-  
+
   return (
     <>
       <Box
@@ -75,6 +76,13 @@ function Home() {
             onClick={() => scrollSection("tecno")}
           >
             Tecnologias
+          </Button>
+          <Button
+            variant="text"
+            size="large"
+            onClick={() => scrollSection("formations")}
+          >
+            Formação
           </Button>
           <Button
             variant="text"
@@ -178,6 +186,7 @@ function Home() {
       </Box>
       <About />
       <Technologies />
+      <Formations />
       <Services />
     </>
   );
