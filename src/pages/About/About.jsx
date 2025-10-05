@@ -63,7 +63,7 @@ function About() {
           maxWidth: { xs: "90%", md: "70%" },
         }}
       >
-        <Grid sx={{ display: "flex", position: "relative", paddingRight: 5 }}>
+        <Grid sx={{ display: "flex", position: "relative" }}>
           <img
             className="image"
             src={image}
@@ -105,13 +105,15 @@ function About() {
             fontFamily={"monospace"}
             variant="h6"
           >
-            Apaixonado por tecnologia e sempre em busca de inovação. Trabalho
-            com React.js para criar interfaces dinâmicas e responsivas,
-            utilizando libs de estilização para um design moderno. No back-end,
-            utilizo Node.js com Express e Axios para construir APIs eficientes,
-            além de gerenciar dados com Prisma e bancos relacionais e não
-            relacionais. Também desenvolvo aplicações para Windows em C# - .net.
-            Sempre explorando novas tecnologias para otimizar meus projetos.
+            Sou apaixonado por tecnologia e estou sempre em busca de aprender e
+            inovar. Trabalho com React.js para criar interfaces dinâmicas e
+            responsivas, usando bibliotecas de estilização para dar um visual
+            moderno e intuitivo. No back-end, costumo usar Node.js com Express e
+            Axios para construir APIs leves e rápidas, além de gerenciar dados
+            com Prisma ou então Sequelize em bancos relacionais e não relacionais. Também
+            desenvolvo aplicações para Windows em C# / .NET e estou sempre
+            explorando novas ferramentas e tecnologias que possam deixar meus
+            projetos mais otimizados e completos.
           </Typography>
           <List>
             {ContactData.map((item, index) => (

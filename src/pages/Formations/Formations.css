@@ -1,0 +1,11 @@
+.imageFront {
+    @media screen and (max-width: 600px) {
+        width: 300px;
+    }
+}
+
+.imageBack {
+    @media screen and (max-width: 600px) {
+        width: 300px;
+    }
+}

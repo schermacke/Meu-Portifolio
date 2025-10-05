@@ -117,7 +117,7 @@ function Home() {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          minHeight={"70vh"}
+          minHeight={"75vh"}
           flexDirection={"column"}
         >
           <Box
@@ -127,14 +127,24 @@ function Home() {
               borderRadius: "50px",
             }}
           >
-            <Typography variant="h3" fontFamily={"monospace"}>
+            <Typography
+              variant="h3"
+              sx={{ fontSize: { xs: "25px", md: "40px" } }}
+              fontFamily={"monospace"}
+            >
               Olá, Eu sou
             </Typography>
-            <Typography variant="h2" color="warning" fontFamily={"monospace"}>
+            <Typography textAlign={"center"}
+              variant="h2"
+              sx={{ fontSize: { xs: "30px", md: "50px" } }}
+              color="warning"
+              fontFamily={"monospace"}
+            >
               Eduardo Schermack
             </Typography>
           </Box>
           <Grid
+            className="textInfo"
             item
             display={"flex"}
             justifyContent={"center"}
@@ -143,15 +153,21 @@ function Home() {
             sx={{ flexWrap: "wrap" }}
           >
             <Typography
+              textAlign={"center"}
               variant="subtitle1"
-              fontSize={"18px"}
               fontFamily={"monospace"}
+              sx={{
+                width: { xs: "95%", md: "50%" },
+                fontSize: { xs: "16px", md: "20px" },
+              }}
             >
-              Sou desenvolvedor web frontend especializado em fornecer código
-              limpo.
-              <br /> Crio sites altamente interativos com animações envolventes,
-              <br />
-              proporcionando uma experiência de usuário fluida e atraente.
+              Sou desenvolvedor web frontend e gosto de trabalhar sempre com
+              código limpo e bem estruturado. Tenho foco em criar sites modernos
+              e interativos, sempre pensando na melhor experiência para o
+              usuário. Além da parte web, também atuo em automação industrial,
+              com experiência em sistemas Phoenix Contact e Siemens, o que me
+              permite unir tecnologia da web com soluções voltadas para o setor
+              industrial.
             </Typography>
           </Grid>
           <Grid

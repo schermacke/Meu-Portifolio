@@ -17,7 +17,11 @@ import { IoLogoElectron } from "react-icons/io5";
 import { TbBrandCSharp } from "react-icons/tb";
 import "./Tecno.css";
 import { DiMsqlServer } from "react-icons/di";
-
+import { SiSequelize } from "react-icons/si";
+import { MdPrecisionManufacturing } from "react-icons/md";
+import { SiSiemens } from "react-icons/si";
+import phoenix from "/phoenix.png";
+import elipse from "/elipse.png";
 function Technologies() {
   return (
     <Grid
@@ -48,7 +52,7 @@ function Technologies() {
         }}
         fontFamily={"monospace"}
       >
-        A seguir, apresento as tecnologias que domino e aplico com frequência em
+        A seguir, apresento as tecnologias que aplico com frequência em
         meus projetos!
       </Typography>
       <Grid
@@ -118,6 +122,7 @@ function Technologies() {
                   Electron.js
                 </Typography>
                 <Typography
+                  paddingBottom={"5px"}
                   variant="h6"
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
@@ -135,7 +140,7 @@ function Technologies() {
                 >
                   <TbBrandCSharp
                     fontSize={"30px"}
-                    style={{ marginLeft: "5px", marginRight: "5px" }}
+                    style={{ marginLeft: "7px", marginRight: "5px" }}
                   />
                   .net
                 </Typography>
@@ -251,7 +256,10 @@ function Technologies() {
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
                 >
-                  <SiPrisma fontSize={"30px"} style={{ marginRight: "5px" }} />
+                  <SiPrisma
+                    fontSize={"30px"}
+                    style={{ marginLeft: "5px", marginRight: "5px" }}
+                  />
                   Prisma.js
                 </Typography>
                 <Typography
@@ -259,11 +267,83 @@ function Technologies() {
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
                 >
+                  <SiSequelize
+                    fontSize={"30px"}
+                    style={{ marginLeft: "5px", marginRight: "5px" }}
+                  />
+                  Sequelize
+                </Typography>
+                <Typography
+                  variant="h6"
+                  fontFamily={"monospace"}
+                  sx={{ display: "flex", alignItems: "center", paddingTop: 1 }}
+                >
                   <SiAxios
                     fontSize={"30px"}
                     style={{ marginLeft: "5px", marginRight: "5px" }}
                   />
                   Axios.js
+                </Typography>
+              </Grid>
+            </Card>
+          </CardContent>
+        </Card>
+        <Card
+          className="Framework"
+          variant="elevation"
+          sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
+        >
+          <CardContent>
+            <Typography
+              variant="h5"
+              fontFamily={"monospace"}
+              sx={{ display: "flex", alignItems: "center" }}
+            >
+              <MdPrecisionManufacturing sx={{ marginRight: "10px" }} />
+              Automação
+            </Typography>
+            <Card
+              variant="outlined"
+              sx={{ backgroundColor: "rgb(80, 80, 80)" }}
+            >
+              <Grid item padding={2}>
+                <Typography
+                  variant="h6"
+                  fontFamily={"monospace"}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
+                  <img
+                    src={phoenix}
+                    style={{
+                      marginLeft: "5px",
+                      marginRight: "7px",
+                      width: "50px",
+                    }}
+                  />
+                  Phoenix
+                </Typography>
+                <Typography
+                paddingBottom={1.3}
+                  variant="h6"
+                  fontFamily={"monospace"}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
+                  <SiSiemens
+                    fontSize={"45px"}
+                    style={{ marginLeft: "5px", marginRight: "15px" }}
+                  />
+                  Siemens
+                </Typography>
+                <Typography
+                  variant="h6"
+                  fontFamily={"monospace"}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
+                  <img
+                    src={elipse}
+                    style={{ marginLeft: "5px", marginRight: "15px", width: '45px' }}
+                  />
+                  Elipse
                 </Typography>
               </Grid>
             </Card>

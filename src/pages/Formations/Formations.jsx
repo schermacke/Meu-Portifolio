@@ -2,6 +2,7 @@ import { Divider, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import certificate from "/certificate.png";
 import certificateBack from "/certificateBack.png";
+import "./Formations.css";
 
 function Formations() {
   return (
@@ -27,9 +28,10 @@ function Formations() {
           display: "flex",
           justifyContent: "center",
           paddingTop: 5,
+          alignItems: "center",
         }}
       >
-        <Typography fontFamily={"monospace"} variant="h5">
+        <Typography textAlign={"center"} fontFamily={"monospace"} variant="h5">
           Análise e desenvolvimento de sistemas
         </Typography>
       </Grid>
@@ -41,7 +43,12 @@ function Formations() {
           gap: 2,
         }}
       >
-        <img src={certificate} alt="Certificate" style={{ width: "600px" }} />
+        <img
+          className="imageFront"
+          src={certificate}
+          alt="Certificate"
+          style={{ maxWidth: "600px" }}
+        />
       </Grid>
       <Grid
         sx={{
@@ -51,20 +58,20 @@ function Formations() {
         }}
       >
         <img
+          className="imageBack"
           src={certificateBack}
           alt="Certificate"
-          style={{ width: "600px" }}
+          style={{ maxWidth: "600px" }}
         />
       </Grid>
       <Grid
         sx={{
           display: "flex",
           justifyContent: "center",
-          paddingTop: 2,
-          paddingBottom: 5,
+          paddingTop: 2
         }}
       >
-        <Typography fontFamily={"monospace"} variant="h5">
+        <Typography textAlign={"center"} fontFamily={"monospace"} variant="h5">
           Formação Concluida em Setembro de 2025
         </Typography>
       </Grid>
