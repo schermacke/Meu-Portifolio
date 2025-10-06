@@ -40,6 +40,218 @@ function Services() {
           sx={{ flexDirection: { xs: "column", sm: "column", md: "row" } }}
         >
           <Card
+            className="Fastconfig"
+            variant="elevation"
+            sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
+          >
+            <CardContent>
+              <Typography variant="h5" fontFamily={"monospace"}>
+                Control Languiru
+              </Typography>
+              <Card
+                variant="outlined"
+                sx={{ backgroundColor: "rgb(80,80,80)" }}
+              >
+                <Carousel
+                  interval={4000}
+                  wrap={true}
+                  style={{ maxWidth: "650px", maxHeight: "450px" }}
+                >
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/loginsepara.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/home.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/home2.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/home3.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/homedark.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/listuser.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/editperfil.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/myperfiluser.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/myperfiluserdark.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/perfil.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/optionclient.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/perfiluser.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/termosdeuso.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/agenda.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/agendamentodark.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="/separaLixo/createusersepara.png"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+              </Card>
+              <Grid
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <Typography fontFamily={"monospace"}>
+                  Login: usuario.usuario@gmail.com
+                  <br /> Senha: 123456789
+                </Typography>
+                <Typography textAlign={"center"} fontFamily={"monospace"}>
+                  <a href="https://project-separa-lixo.vercel.app/">
+                    Visitar SeparaLixo
+                  </a>
+                </Typography>
+              </Grid>
+            </CardContent>
+          </Card>
+          <Grid
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              width: { xs: "95%", md: "35%" },
+              textAlign: "center",
+            }}
+          >
+            <Typography fontFamily={"monospace"}>
+              O SeparaLixo foi um projeto desenvolvido durante a faculdade com o
+              objetivo de facilitar a coleta de lixo para pessoas com limitações
+              de mobilidade ou condições de saúde. A ideia central é conectar
+              essas pessoas à empresa responsável pela coleta, tornando o
+              processo mais acessível, prático e humano. A plataforma é
+              administrada pela própria empresa de coleta, que é responsável por
+              criar os cadastros e distribuir os logins de acesso. A partir
+              disso, o usuário pode agendar coletas específicas, especialmente
+              para tipos de lixo que exigem tratamento diferenciado, além dos
+              resíduos orgânicos e recicláveis comuns. Isso permite que pessoas
+              com necessidades especiais recebam atendimento diretamente em
+              casa, com muito mais facilidade. O sistema foi desenvolvido com
+              React.js no front-end, Express.js no back-end, MongoDB como banco
+              de dados principal, e Axios para as requisições HTTP. A gestão do
+              banco foi feita com o Prisma ORM, garantindo melhor controle e
+              segurança dos dados. A arquitetura inicial do projeto segue o
+              modelo monolítico, o que facilitou o desenvolvimento e a
+              integração entre as camadas da aplicação. Durante o
+              desenvolvimento, aprendi bastante sobre gestão de níveis de
+              usuários, criptografia de senhas e tokens de autenticação, além da
+              integração com serviços de e-mail para recuperação de senha. Foi
+              um projeto muito interessante de trabalhar, que me proporcionou um
+              aprendizado sólido em segurança, autenticação e estrutura de
+              aplicações web modernas. Apesar de já ter me formado e o projeto
+              ter conquistado nota máxima, o SeparaLixo continua online e em
+              funcionamento, e eu sigo prestando suporte e manutenção para
+              garantir sua estabilidade e evolução.
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          gap={2}
+          sx={{ flexDirection: { xs: "column", sm: "column", md: "row" } }}
+        >
+          <Card
             className="Automagate"
             variant="elevation"
             sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
@@ -55,7 +267,7 @@ function Services() {
                 <Carousel
                   interval={4000}
                   wrap={true}
-                  style={{ maxWidth: "550px", maxHeight: "350px" }}
+                  style={{ maxWidth: "650px", maxHeight: "350px" }}
                 >
                   <Carousel.Item>
                     <img
@@ -176,7 +388,7 @@ function Services() {
                 <Carousel
                   interval={4000}
                   wrap={true}
-                  style={{ maxWidth: "550px", maxHeight: "450px" }}
+                  style={{ maxWidth: "650px", maxHeight: "450px" }}
                 >
                   <Carousel.Item>
                     <img
