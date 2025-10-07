@@ -46,7 +46,7 @@ function Services() {
           >
             <CardContent>
               <Typography variant="h5" fontFamily={"monospace"}>
-                Control Languiru
+                SeparaLixo
               </Typography>
               <Card
                 variant="outlined"
