@@ -69,7 +69,7 @@ function Technologies() {
         <Card
           className="Developer"
           variant="elevation"
-          sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
+          
         >
           <CardContent>
             <Typography
@@ -151,7 +151,6 @@ function Technologies() {
         <Card
           className="Database"
           variant="elevation"
-          sx={{ backgroundColor: "rgb(226, 220, 220)", color: "black" }}
         >
           <CardContent>
             <Typography
@@ -210,7 +209,6 @@ function Technologies() {
         <Card
           className="Framework"
           variant="elevation"
-          sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
         >
           <CardContent>
             <Typography
@@ -291,7 +289,6 @@ function Technologies() {
         <Card
           className="Framework"
           variant="elevation"
-          sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
         >
           <CardContent>
             <Typography

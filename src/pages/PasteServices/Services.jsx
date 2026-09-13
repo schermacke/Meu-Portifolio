@@ -39,11 +39,7 @@ function Services() {
           gap={2}
           sx={{ flexDirection: { xs: "column", sm: "column", md: "row" } }}
         >
-          <Card
-            className="Fastconfig"
-            variant="elevation"
-            sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
-          >
+          <Card className="Fastconfig" variant="elevation">
             <CardContent>
               <Typography variant="h5" fontFamily={"monospace"}>
                 SeparaLixo
@@ -251,11 +247,7 @@ function Services() {
           gap={2}
           sx={{ flexDirection: { xs: "column", sm: "column", md: "row" } }}
         >
-          <Card
-            className="Automagate"
-            variant="elevation"
-            sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
-          >
+          <Card className="Automagate" variant="elevation">
             <CardContent>
               <Typography variant="h5" fontFamily={"monospace"}>
                 AutomaGate-v2
@@ -372,11 +364,7 @@ function Services() {
           gap={2}
           sx={{ flexDirection: { xs: "column", sm: "column", md: "row" } }}
         >
-          <Card
-            className="Fastconfig"
-            variant="elevation"
-            sx={{ backgroundColor: "rgb(207, 204, 204)", color: "black" }}
-          >
+          <Card className="Fastconfig" variant="elevation">
             <CardContent>
               <Typography variant="h5" fontFamily={"monospace"}>
                 Control Languiru
