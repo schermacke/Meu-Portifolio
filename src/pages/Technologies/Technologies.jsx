@@ -4,13 +4,9 @@ import StorageIcon from "@mui/icons-material/Storage";
 import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import { FaReact } from "react-icons/fa";
-//import { Padding } from "@mui/icons-material";
 import { SiExpress } from "react-icons/si";
-import { FaVuejs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
-import { SiMui } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa6";
 import { SiPrisma } from "react-icons/si";
 import { SiAxios } from "react-icons/si";
 import { IoLogoElectron } from "react-icons/io5";
@@ -22,6 +18,8 @@ import { MdPrecisionManufacturing } from "react-icons/md";
 import { SiSiemens } from "react-icons/si";
 import phoenix from "/phoenix.png";
 import elipse from "/elipse.png";
+import { IoLogoJavascript } from "react-icons/io";
+
 function Technologies() {
   return (
     <Grid
@@ -52,8 +50,8 @@ function Technologies() {
         }}
         fontFamily={"monospace"}
       >
-        A seguir, apresento as tecnologias que aplico com frequência em
-        meus projetos!
+        A seguir, apresento as tecnologias que aplico com frequência em meus
+        projetos!
       </Typography>
       <Grid
         paddingTop={5}
@@ -66,11 +64,7 @@ function Technologies() {
         justifyContent={"center"}
         gap={3}
       >
-        <Card
-          className="Developer"
-          variant="elevation"
-          
-        >
+        <Card className="Developer" variant="elevation">
           <CardContent>
             <Typography
               variant="h5"
@@ -91,11 +85,11 @@ function Technologies() {
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
                 >
-                  <FaReact
-                    fontSize={"30px"}
+                  <IoLogoJavascript
+                    fontSize={"25px"}
                     style={{ marginLeft: "5px", marginRight: "5px" }}
                   />
-                  React.js
+                  JavaScript
                 </Typography>
                 <Typography
                   paddingBottom={"10px"}
@@ -103,37 +97,14 @@ function Technologies() {
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
                 >
-                  <FaVuejs
-                    fontSize={"30px"}
+                  <IoLogoJavascript
+                    fontSize={"25px"}
                     style={{ marginLeft: "5px", marginRight: "5px" }}
                   />
-                  Vue.js
+                  Node.js
                 </Typography>
                 <Typography
                   paddingBottom={"10px"}
-                  variant="h6"
-                  fontFamily={"monospace"}
-                  sx={{ display: "flex", alignItems: "center" }}
-                >
-                  <IoLogoElectron
-                    fontSize={"30px"}
-                    style={{ marginLeft: "5px", marginRight: "5px" }}
-                  />
-                  Electron.js
-                </Typography>
-                <Typography
-                  paddingBottom={"5px"}
-                  variant="h6"
-                  fontFamily={"monospace"}
-                  sx={{ display: "flex", alignItems: "center" }}
-                >
-                  <SiExpress
-                    fontSize={"30px"}
-                    style={{ marginLeft: "5px", marginRight: "5px" }}
-                  />
-                  Express.js
-                </Typography>
-                <Typography
                   variant="h6"
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
@@ -144,14 +115,28 @@ function Technologies() {
                   />
                   .net
                 </Typography>
+                <Typography
+                  paddingBottom={"10px"}
+                  paddingLeft={4.5}
+                  variant="h6"
+                  fontFamily={"monospace"}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
+                  Ladder
+                </Typography>
+                <Typography
+                  paddingLeft={4.5}
+                  variant="h6"
+                  fontFamily={"monospace"}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
+                  SCL
+                </Typography>
               </Grid>
             </Card>
           </CardContent>
         </Card>
-        <Card
-          className="Database"
-          variant="elevation"
-        >
+        <Card className="Database" variant="elevation">
           <CardContent>
             <Typography
               variant="h5"
@@ -206,10 +191,7 @@ function Technologies() {
             </Card>
           </CardContent>
         </Card>
-        <Card
-          className="Framework"
-          variant="elevation"
-        >
+        <Card className="Framework" variant="elevation">
           <CardContent>
             <Typography
               variant="h5"
@@ -230,11 +212,11 @@ function Technologies() {
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
                 >
-                  <SiMui
+                  <FaReact
                     fontSize={"30px"}
-                    style={{ marginLeft: "5px", marginRight: "7px" }}
+                    style={{ marginLeft: "5px", marginRight: "5px" }}
                   />
-                  Mui Material
+                  React.js
                 </Typography>
                 <Typography
                   paddingBottom={"10px"}
@@ -242,11 +224,23 @@ function Technologies() {
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
                 >
-                  <FaBootstrap
+                  <IoLogoElectron
                     fontSize={"30px"}
                     style={{ marginLeft: "5px", marginRight: "5px" }}
                   />
-                  Bootstrap
+                  Electron.js
+                </Typography>
+                <Typography
+                  paddingBottom={"10px"}
+                  variant="h6"
+                  fontFamily={"monospace"}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
+                  <SiExpress
+                    fontSize={"30px"}
+                    style={{ marginLeft: "5px", marginRight: "5px" }}
+                  />
+                  Express.js
                 </Typography>
                 <Typography
                   paddingBottom={"10px"}
@@ -261,6 +255,7 @@ function Technologies() {
                   Prisma.js
                 </Typography>
                 <Typography
+                  paddingBottom={"2px"}
                   variant="h6"
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
@@ -286,10 +281,7 @@ function Technologies() {
             </Card>
           </CardContent>
         </Card>
-        <Card
-          className="Framework"
-          variant="elevation"
-        >
+        <Card className="Framework" variant="elevation">
           <CardContent>
             <Typography
               variant="h5"
@@ -320,7 +312,7 @@ function Technologies() {
                   Phoenix
                 </Typography>
                 <Typography
-                paddingBottom={1.3}
+                  paddingBottom={1.3}
                   variant="h6"
                   fontFamily={"monospace"}
                   sx={{ display: "flex", alignItems: "center" }}
@@ -338,7 +330,11 @@ function Technologies() {
                 >
                   <img
                     src={elipse}
-                    style={{ marginLeft: "5px", marginRight: "15px", width: '45px' }}
+                    style={{
+                      marginLeft: "5px",
+                      marginRight: "15px",
+                      width: "45px",
+                    }}
                   />
                   Elipse
                 </Typography>

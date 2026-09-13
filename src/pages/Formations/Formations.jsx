@@ -16,7 +16,7 @@ function Formations() {
       id="formations"
       display={"flex"}
       flexDirection={"column"}
-      paddingTop={3}
+      paddingTop={5}
       sx={{ paddingBottom: { xs: "5rem", sm: "2rem", md: "0rem" } }}
     >
       <Divider sx={{ width: "70%", mx: "auto" }}>
