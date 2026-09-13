@@ -54,7 +54,7 @@ function Technologies() {
         projetos!
       </Typography>
       <Grid
-        paddingTop={5}
+        paddingTop={4}
         item
         sx={{
           flexDirection: { xs: "column", sm: "column", md: "row" },
@@ -62,7 +62,7 @@ function Technologies() {
         }}
         display={"flex"}
         justifyContent={"center"}
-        gap={3}
+        gap={5}
       >
         <Card className="Developer" variant="elevation">
           <CardContent>

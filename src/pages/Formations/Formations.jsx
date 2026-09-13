@@ -16,7 +16,7 @@ function Formations() {
       id="formations"
       display={"flex"}
       flexDirection={"column"}
-      paddingTop={5}
+      paddingTop={1}
       sx={{ paddingBottom: { xs: "5rem", sm: "2rem", md: "0rem" } }}
     >
       <Divider sx={{ width: "70%", mx: "auto" }}>
@@ -29,11 +29,26 @@ function Formations() {
         </Typography>
       </Divider>
       <Grid
+        paddingTop={7}
+        display={"flex"}
+        justifyContent={"center"}
+        textAlign={"center"}
+      >
+        <Typography
+          sx={{
+            fontSize: { xs: "1.2rem", sm: "1.2rem", md: "1.4rem" },
+            maxWidth: { xs: "90%", sm: "70%", md: "70%" },
+          }}
+          fontFamily={"monospace"}
+        >
+          Construindo uma base sólida entre Tecnologia, software e automação.
+        </Typography>
+      </Grid>
+      <Grid
         display={"flex"}
         flexDirection={"row"}
         justifyContent={"center"}
         gap={5}
-        paddingTop={5}
         sx={{
           flexDirection: { xs: "column", sm: "column", md: "row" },
         }}
@@ -145,9 +160,7 @@ function Formations() {
                 justifyContent: "center",
               }}
             >
-              <LinearProgress
-                variant="indeterminate"
-                value={5} />
+              <LinearProgress variant="indeterminate" value={5} />
             </Grid>
             <Grid
               sx={{
